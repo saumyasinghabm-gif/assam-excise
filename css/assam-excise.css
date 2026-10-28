@@ -1,0 +1,2988 @@
+
+/* ===================================
+   MADHUSHALA PRO - ASSAM EXCISE PAGE
+   =================================== */
+
+:root {
+    --assam-yellow: #F5C928;
+    --assam-yellow-light: #FFF8E1;
+    --assam-navy: #202B3C;
+    --assam-white: #FFFFFF;
+    --assam-text: #424B5A;
+    --assam-border: #E8E8E8;
+
+    --assam-heading-font: "Outfit", sans-serif;
+    --assam-body-font: "DM Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--assam-body-font);
+    color: var(--assam-navy);
+    background: var(--assam-white);
+}
+
+.assam-container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+.assam-hero {
+    padding: 100px 0;
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(245, 201, 40, 0.20),
+            transparent 35%
+        ),
+        var(--assam-white);
+}
+
+.assam-eyebrow {
+    display: inline-block;
+    padding: 9px 14px;
+    margin-bottom: 22px;
+    background: var(--assam-yellow-light);
+    border: 1px solid #F0E1A1;
+    border-radius: 30px;
+    color: var(--assam-navy);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.assam-hero h1 {
+    max-width: 780px;
+    margin: 0 0 22px;
+    font-family: var(--assam-heading-font);
+    font-size: clamp(38px, 5.2vw, 66px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+.assam-hero h1 span {
+    color: #B78A00;
+}
+
+.assam-hero p {
+    max-width: 650px;
+    margin: 0 0 30px;
+    color: var(--assam-text);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.assam-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+}
+
+.assam-btn,
+.assam-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 50px;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.assam-btn {
+    background: var(--assam-yellow);
+    color: var(--assam-navy);
+    border: 1px solid var(--assam-yellow);
+}
+
+.assam-btn:hover {
+    background: #E6B817;
+    transform: translateY(-2px);
+}
+
+.assam-btn-secondary {
+    background: var(--assam-white);
+    color: var(--assam-navy);
+    border: 1px solid var(--assam-border);
+}
+
+.assam-btn-secondary:hover {
+    border-color: var(--assam-yellow);
+    background: var(--assam-yellow-light);
+}
+
+@media (max-width: 600px) {
+    .assam-hero {
+        padding: 70px 0;
+    }
+
+    .assam-hero p {
+        font-size: 16px;
+    }
+
+    .assam-hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .assam-btn,
+    .assam-btn-secondary {
+        width: 100%;
+    }
+}
+
+/* =================================
+   ASSAM EXCISE - VIDEO SECTION
+   ================================= */
+
+.assam-video-section {
+    padding: 85px 0;
+    background: #FFF8E1;
+}
+
+.assam-video-heading {
+    max-width: 760px;
+    margin: 0 auto 38px;
+    text-align: center;
+}
+
+.assam-video-heading h2 {
+    margin: 18px 0;
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.2;
+    color: #202B3C;
+}
+
+.assam-video-heading h2 span {
+    color: #B78A00;
+}
+
+.assam-video-heading p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #525B68;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.assam-video-frame {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    background: #202B3C;
+    border: 5px solid #FFFFFF;
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(32, 43, 60, 0.13);
+}
+
+.assam-video-frame iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.assam-video-highlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 30px;
+}
+
+.assam-video-highlights div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #202B3C;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.assam-video-highlights i {
+    color: #B78A00;
+    font-size: 21px;
+}
+
+@media (max-width: 600px) {
+    .assam-video-section {
+        padding: 55px 0;
+    }
+
+    .assam-video-heading {
+        margin-bottom: 28px;
+    }
+
+    .assam-video-heading p {
+        font-size: 15px;
+    }
+
+    .assam-video-frame {
+        border-width: 3px;
+        border-radius: 12px;
+    }
+
+    .assam-video-highlights {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+        width: fit-content;
+        margin: 25px auto 0;
+    }
+}
+
+/* ===================================
+   STEP 3: RETAIL CHALLENGES SECTION
+   =================================== */
+
+.assam-challenges-section {
+    padding: 90px 0;
+    background: #FFFFFF;
+}
+
+.assam-challenges-heading {
+    max-width: 790px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.assam-challenges-heading h2 {
+    margin: 18px 0;
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    color: #202B3C;
+}
+
+.assam-challenges-heading h2 span {
+    display: block;
+    color: #B78A00;
+}
+
+.assam-challenges-heading > p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #525B68;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.assam-challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.assam-challenge-card {
+    padding: 30px 24px;
+    background: #FFFFFF;
+    border: 1px solid #EAECEF;
+    border-radius: 14px;
+    box-shadow: 0 6px 24px rgba(32, 43, 60, 0.045);
+    transition: transform 0.25s ease, box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.assam-challenge-card:hover {
+    transform: translateY(-5px);
+    border-color: #E7C64F;
+    box-shadow: 0 14px 32px rgba(32, 43, 60, 0.09);
+}
+
+.assam-challenge-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    background: #FFF4C5;
+    color: #8A6900;
+    font-size: 25px;
+}
+
+.assam-challenge-card h3 {
+    margin: 0 0 12px;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #202B3C;
+}
+
+.assam-challenge-card p {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #626B78;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    .assam-challenges-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .assam-challenges-section {
+        padding: 60px 0;
+    }
+
+    .assam-challenges-heading {
+        margin-bottom: 32px;
+    }
+
+    .assam-challenges-heading > p {
+        font-size: 15px;
+    }
+
+    .assam-challenges-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .assam-challenge-card {
+        padding: 24px;
+    }
+}
+
+/* =====================================
+   STEP 4: EXCISE WORKFLOW INTEGRATION
+   ===================================== */
+
+.assam-integration-section {
+    padding: 90px 0;
+    background: #FFF8E1;
+}
+
+.assam-integration-heading {
+    max-width: 790px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.assam-integration-heading h2 {
+    margin: 18px 0;
+    color: #202B3C;
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+.assam-integration-heading h2 span {
+    color: #B78A00;
+}
+
+.assam-integration-heading p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #525B68;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.assam-integration-diagram {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 160px minmax(0, 1fr);
+    align-items: center;
+    gap: 22px;
+}
+
+.assam-system-card {
+    min-width: 0;
+    padding: 34px;
+    background: #FFFFFF;
+    border: 1px solid #E8E3D3;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(32, 43, 60, 0.06);
+}
+
+.assam-system-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 24px;
+    border-radius: 15px;
+    background: #FFF1B8;
+    color: #8A6900;
+    font-size: 28px;
+}
+
+.assam-system-label {
+    display: block;
+    margin-bottom: 10px;
+    color: #8A6900;
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.assam-system-card h3 {
+    margin: 0 0 22px;
+    color: #202B3C;
+    font-family: "Outfit", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.assam-system-card ul {
+    display: grid;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.assam-system-card li {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    color: #525B68;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.assam-system-card li i {
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: #B78A00;
+}
+
+.assam-excise-card {
+    border-top: 4px solid #F5C928;
+}
+
+.assam-integration-connector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: #6B7280;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.assam-connector-line {
+    width: 2px;
+    height: 28px;
+    background: #D9B52D;
+}
+
+.assam-connector-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border: 1px solid #E9D68A;
+    border-radius: 50%;
+    background: #FFFFFF;
+    color: #8A6900;
+    font-size: 24px;
+}
+
+.assam-integration-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 850px;
+    margin: 32px auto 0;
+    padding: 18px 22px;
+    border: 1px solid #F0E1A1;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.assam-integration-note > i {
+    margin-top: 3px;
+    color: #8A6900;
+    font-size: 19px;
+}
+
+.assam-integration-note p {
+    margin: 0;
+    color: #525B68;
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Tablet and mobile */
+@media (max-width: 850px) {
+    .assam-integration-section {
+        padding: 65px 0;
+    }
+
+    .assam-integration-diagram {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .assam-system-card {
+        padding: 28px;
+    }
+
+    .assam-integration-connector {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .assam-connector-line {
+        width: 28px;
+        height: 2px;
+    }
+
+    .assam-system-card h3 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 600px) {
+    .assam-integration-heading p {
+        font-size: 15px;
+    }
+
+    .assam-system-card {
+        padding: 24px;
+    }
+
+    .assam-integration-note {
+        padding: 16px;
+    }
+}
+
+/* =====================================
+   STEP 5: SMART BILLING & INVENTORY
+   ===================================== */
+
+.assam-billing-section {
+    padding: 95px 0;
+    background: #FFFFFF;
+}
+
+.assam-billing-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    align-items: center;
+    gap: 65px;
+}
+
+.assam-billing-content h2 {
+    margin: 20px 0;
+    color: #202B3C;
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(34px, 4vw, 49px);
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: -0.8px;
+}
+
+.assam-billing-content h2 span {
+    display: block;
+    color: #B78A00;
+}
+
+.assam-billing-description {
+    margin: 0 0 30px;
+    color: #525B68;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.assam-billing-features {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.assam-billing-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.assam-billing-feature-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #FFF4C5;
+    color: #8A6900;
+    font-size: 22px;
+}
+
+.assam-billing-feature h3 {
+    margin: 0 0 6px;
+    color: #202B3C;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.assam-billing-feature p {
+    margin: 0;
+    color: #626B78;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.assam-billing-visual {
+    padding: 30px;
+    border: 1px solid #F0E1A1;
+    border-radius: 20px;
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(245, 201, 40, 0.19),
+            transparent 45%
+        ),
+        #FFFCF2;
+    box-shadow: 0 18px 50px rgba(32, 43, 60, 0.08);
+}
+
+.assam-billing-visual-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.assam-visual-label {
+    color: #8A6900;
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.assam-billing-visual-top h3 {
+    margin: 8px 0 0;
+    color: #202B3C;
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.assam-visual-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #F5C928;
+    color: #202B3C;
+    font-size: 23px;
+}
+
+.assam-billing-preview {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    padding: 18px;
+    border: 1px solid #EEEAE0;
+    border-radius: 12px;
+    background: #FFFFFF;
+}
+
+.assam-preview-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: #FFF4C5;
+    color: #8A6900;
+    font-size: 21px;
+}
+
+.assam-preview-text {
+    display: grid;
+    flex: 1;
+    gap: 5px;
+}
+
+.assam-preview-text strong {
+    color: #202B3C;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.assam-preview-text span {
+    color: #737B86;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.assam-preview-check {
+    color: #8A6900;
+    font-size: 19px;
+}
+
+.assam-billing-visual-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    color: #777D86;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+}
+
+.assam-billing-visual-footer i {
+    color: #8A6900;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .assam-billing-layout {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+
+    .assam-billing-content {
+        max-width: 700px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .assam-billing-section {
+        padding: 60px 0;
+    }
+
+    .assam-billing-visual {
+        padding: 20px;
+    }
+
+    .assam-billing-preview {
+        gap: 10px;
+        padding: 13px;
+    }
+
+    .assam-preview-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+}
+
+/* =====================================
+   STEP 6: KEY FEATURES SECTION
+   ===================================== */
+
+.assam-features-section {
+    padding: 90px 0;
+    background: #FFF8E1;
+}
+
+.assam-features-heading {
+    max-width: 800px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.assam-features-heading h2 {
+    margin: 18px 0;
+    color: #202B3C;
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+.assam-features-heading h2 span {
+    display: block;
+    color: #B78A00;
+}
+
+.assam-features-heading p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #525B68;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.assam-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.assam-feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 270px;
+    padding: 28px;
+    border: 1px solid #EEE8D7;
+    border-radius: 16px;
+    background: #FFFFFF;
+    box-shadow: 0 8px 25px rgba(32, 43, 60, 0.04);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.assam-feature-card:hover {
+    transform: translateY(-5px);
+    border-color: #E8CD66;
+    box-shadow: 0 15px 35px rgba(32, 43, 60, 0.08);
+}
+
+.assam-feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 22px;
+    border-radius: 13px;
+    background: #FFF1B8;
+    color: #8A6900;
+    font-size: 25px;
+}
+
+.assam-feature-card h3 {
+    margin: 0 0 12px;
+    color: #202B3C;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.assam-feature-card p {
+    margin: 0 0 22px;
+    color: #626B78;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.assam-feature-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    color: #8A6900;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.assam-features-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 42px;
+    text-align: center;
+}
+
+.assam-features-cta p {
+    margin: 0;
+    color: #424B5A;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+}
+
+/* Tablet */
+@media (max-width: 950px) {
+    .assam-features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .assam-features-section {
+        padding: 60px 0;
+    }
+
+    .assam-features-heading {
+        margin-bottom: 32px;
+    }
+
+    .assam-features-heading p {
+        font-size: 15px;
+    }
+
+    .assam-features-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .assam-feature-card {
+        min-height: auto;
+        padding: 24px;
+    }
+
+    .assam-features-cta {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+/* STEP 7: EXCISE REGISTER & REPORTING */
+
+.assam-register-section {
+  padding: 90px 0;
+  background: #FFFDF5;
+  font-family: var(--assam-body-font);
+}
+
+.assam-register-heading {
+  max-width: 720px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.assam-register-heading h2 {
+  margin: 14px 0;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.2;
+}
+
+.assam-register-heading h2 span {
+  color: #C79600;
+}
+
+.assam-register-heading p {
+  color: var(--assam-text);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.assam-register-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid #EAE3CF;
+  border-radius: 18px;
+  box-shadow: 0 15px 45px rgba(32, 43, 60, 0.07);
+}
+
+.assam-register-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px 30px;
+  border-bottom: 1px solid #EEE8D9;
+}
+
+.assam-register-label {
+  color: #A77B00;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.assam-register-top h3 {
+  margin: 8px 0 5px;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: 24px;
+}
+
+.assam-register-top p {
+  margin: 0;
+  color: #737987;
+  font-size: 14px;
+}
+
+.assam-register-icon {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  place-items: center;
+  background: var(--assam-yellow-light);
+  border-radius: 14px;
+  color: #A77B00;
+  font-size: 25px;
+}
+
+.assam-register-table-wrap {
+  overflow-x: auto;
+}
+
+.assam-register-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.assam-register-table th,
+.assam-register-table td {
+  padding: 17px 24px;
+  border-bottom: 1px solid #F0EEE7;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.assam-register-table th {
+  background: #FFFCF1;
+  color: #656B76;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.assam-register-table td {
+  color: var(--assam-text);
+}
+
+.assam-register-table td:first-child {
+  color: var(--assam-navy);
+  font-weight: 700;
+}
+
+.assam-record-tag {
+  display: inline-block;
+  padding: 6px 10px;
+  background: #FFF5D2;
+  border-radius: 6px;
+  color: #8A6800;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.assam-register-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 18px 24px;
+  background: #FFFCF1;
+  color: #656B76;
+}
+
+.assam-register-note i {
+  margin-top: 3px;
+  color: #A77B00;
+}
+
+.assam-register-note p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.assam-register-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1000px;
+  margin: 28px auto 0;
+}
+
+.assam-register-benefits div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid #EEE8D9;
+  border-radius: 12px;
+  color: var(--assam-navy);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.assam-register-benefits i {
+  color: #B58A00;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+  .assam-register-section {
+    padding: 60px 0;
+  }
+
+  .assam-register-top {
+    padding: 22px 18px;
+  }
+
+  .assam-register-table th,
+  .assam-register-table td {
+    padding: 14px 16px;
+  }
+
+  .assam-register-benefits {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* STEP 8: MGR MONITORING DASHBOARD */
+
+.assam-mgr-section {
+  padding: 90px 0;
+  background: #FFFFFF;
+  font-family: var(--assam-body-font);
+}
+
+.assam-mgr-heading {
+  max-width: 720px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.assam-mgr-heading h2 {
+  margin: 14px 0;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.2;
+}
+
+.assam-mgr-heading h2 span {
+  color: #C79600;
+}
+
+.assam-mgr-heading p {
+  color: var(--assam-text);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.assam-mgr-dashboard {
+  display: grid;
+  grid-template-columns: 215px minmax(0, 1fr);
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #F8F9FC;
+  border: 1px solid #E7E9EF;
+  border-radius: 20px;
+  box-shadow: 0 18px 55px rgba(32, 43, 60, 0.09);
+}
+
+.assam-mgr-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 14px;
+  background: #202B3C;
+  color: #FFFFFF;
+}
+
+.assam-mgr-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 28px;
+  padding: 0 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.assam-mgr-brand b {
+  color: #F5C928;
+}
+
+.assam-mgr-brand-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  background: #F5C928;
+  border-radius: 10px;
+  color: #202B3C;
+}
+
+.assam-mgr-menu {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px 10px;
+  border-radius: 8px;
+  color: #D0D6E0;
+  font-size: 12px;
+}
+
+/* STEP 9: PURCHASE-TO-SALES WORKFLOW */
+
+.assam-workflow-section {
+  padding: 90px 0;
+  background: #FFFDF5;
+  font-family: var(--assam-body-font);
+}
+
+.assam-workflow-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.assam-workflow-heading h2 {
+  margin: 14px 0;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.2;
+}
+
+.assam-workflow-heading h2 span {
+  color: #C79600;
+}
+
+.assam-workflow-heading p {
+  color: var(--assam-text);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.assam-workflow-track {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr) 28px minmax(0, 1fr) 28px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+}
+
+.assam-workflow-step {
+  position: relative;
+  height: 100%;
+  min-width: 0;
+  padding: 28px 18px 22px;
+  background: #FFFFFF;
+  border: 1px solid #EAE3CF;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.assam-workflow-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(32, 43, 60, 0.08);
+}
+
+.assam-workflow-number {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  color: #C7B77E;
+  font-family: var(--assam-heading-font);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.assam-workflow-icon {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  margin: 12px auto 22px;
+  place-items: center;
+  background: #FFF5D0;
+  border-radius: 16px;
+  color: #A77B00;
+  font-size: 25px;
+}
+
+.assam-workflow-step h3 {
+  margin: 0 0 12px;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: 17px;
+}
+
+.assam-workflow-step p {
+  min-height: 66px;
+  margin: 0 0 18px;
+  color: #6D7481;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.assam-workflow-tag {
+  display: inline-block;
+  padding: 7px 10px;
+  background: #FFF9E8;
+  border: 1px solid #F1E3B7;
+  border-radius: 7px;
+  color: #8A6800;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.assam-workflow-connector {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  color: #B58A00;
+  font-size: 21px;
+}
+
+.assam-workflow-bottom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 35px;
+  padding: 25px 28px;
+  background: #FFFFFF;
+  border: 1px solid #EAE3CF;
+  border-radius: 16px;
+}
+
+.assam-workflow-bottom-icon {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  place-items: center;
+  background: #F5C928;
+  border-radius: 13px;
+  color: #202B3C;
+  font-size: 23px;
+}
+
+.assam-workflow-bottom > div:nth-child(2) {
+  flex: 1;
+}
+
+.assam-workflow-bottom h3 {
+  margin: 0 0 7px;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: 18px;
+}
+
+.assam-workflow-bottom p {
+  margin: 0;
+  color: #6D7481;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.assam-workflow-bottom .assam-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  flex-shrink: 0;
+  padding: 13px 18px;
+  background: #F5C928;
+  border-radius: 9px;
+  color: #202B3C;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.assam-workflow-bottom .assam-btn:hover {
+  background: #E8B900;
+}
+
+@media (max-width: 1000px) {
+  .assam-workflow-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .assam-workflow-connector {
+    display: none;
+  }
+
+  .assam-workflow-step p {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .assam-workflow-section {
+    padding: 60px 0;
+  }
+
+  .assam-workflow-track {
+    grid-template-columns: 1fr;
+  }
+
+  .assam-workflow-step {
+    padding: 25px 20px;
+  }
+
+  .assam-workflow-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 22px;
+  }
+
+  .assam-workflow-bottom .assam-btn {
+    width: 100%;
+  }
+}
+
+.assam-mgr-menu.active {
+  background: #F5C928;
+  color: #202B3C;
+  font-weight: 700;
+}
+
+.assam-mgr-sidebar-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: auto;
+  padding: 14px 6px 0;
+  color: #C8CFD9;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.assam-mgr-main {
+  min-width: 0;
+  padding: 28px;
+}
+
+.assam-mgr-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.assam-mgr-overline {
+  color: #A17B00;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.assam-mgr-topbar h3 {
+  margin: 7px 0 0;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: 23px;
+}
+
+.assam-mgr-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 11px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7ED;
+  border-radius: 8px;
+  color: #5B6473;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.assam-mgr-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+  margin-bottom: 18px;
+}
+
+.assam-mgr-metric {
+  position: relative;
+  min-width: 0;
+  padding: 17px 14px;
+  background: #FFFFFF;
+  border: 1px solid #E8EAF0;
+  border-radius: 12px;
+}
+
+.assam-mgr-metric > span {
+  display: block;
+  padding-right: 24px;
+  color: #687080;
+  font-size: 11px;
+}
+
+.assam-mgr-metric-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #B38A00;
+  font-size: 17px;
+}
+
+.assam-mgr-metric strong {
+  display: block;
+  margin: 16px 0 5px;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: 21px;
+}
+
+.assam-mgr-metric small {
+  color: #828998;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.assam-mgr-lower {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 16px;
+}
+
+.assam-mgr-panel {
+  min-width: 0;
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1px solid #E8EAF0;
+  border-radius: 12px;
+}
+
+.assam-mgr-panel-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+  color: #9299A5;
+}
+
+.assam-mgr-panel-heading h4,
+.assam-mgr-highlight h4 {
+  margin: 0 0 5px;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: 15px;
+}
+
+.assam-mgr-panel-heading p {
+  margin: 0;
+  color: #858B98;
+  font-size: 10px;
+}
+
+.assam-mgr-workflow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 0;
+  border-top: 1px solid #F0F1F4;
+}
+
+.assam-mgr-workflow-icon {
+  display: grid;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  place-items: center;
+  background: #FFF6D9;
+  border-radius: 9px;
+  color: #A17B00;
+}
+
+.assam-mgr-workflow > div:nth-child(2) {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.assam-mgr-workflow strong {
+  color: #344054;
+  font-size: 11px;
+}
+
+.assam-mgr-workflow span {
+  color: #858B98;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.assam-mgr-workflow > i {
+  color: #A17B00;
+  font-size: 13px;
+}
+
+.assam-mgr-highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: #FFF9E8;
+  border-color: #F2E6BD;
+}
+
+.assam-mgr-highlight-icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 18px;
+  place-items: center;
+  background: #F5C928;
+  border-radius: 12px;
+  color: #202B3C;
+  font-size: 20px;
+}
+
+.assam-mgr-highlight p {
+  margin: 8px 0 20px;
+  color: #656B76;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.assam-mgr-highlight a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #8A6800;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.assam-mgr-highlight a:hover {
+  color: #202B3C;
+}
+
+.assam-mgr-disclaimer {
+  margin: 18px 0 0;
+  color: #7A8190;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+@media (max-width: 850px) {
+  .assam-mgr-dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .assam-mgr-sidebar {
+    display: none;
+  }
+
+  .assam-mgr-main {
+    padding: 22px;
+  }
+
+  .assam-mgr-lower {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .assam-mgr-section {
+    padding: 60px 0;
+  }
+
+  .assam-mgr-main {
+    padding: 16px;
+  }
+
+  .assam-mgr-topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .assam-mgr-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .assam-mgr-metric {
+    padding: 16px;
+  }
+
+  .assam-mgr-panel {
+    padding: 16px;
+  }
+}
+
+/* STEP 10: BUSINESS REPORTS & INSIGHTS */
+
+.assam-reports-section {
+  padding: 90px 0;
+  background: #FFFFFF;
+  font-family: var(--assam-body-font);
+}
+
+.assam-reports-heading {
+  max-width: 740px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.assam-reports-heading h2 {
+  margin: 14px 0;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.2;
+}
+
+.assam-reports-heading h2 span {
+  color: #C79600;
+}
+
+.assam-reports-heading p {
+  color: var(--assam-text);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.assam-reports-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: 65px;
+}
+
+.assam-reports-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.assam-reports-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.assam-reports-feature-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  place-items: center;
+  background: #FFF5D0;
+  border: 1px solid #F0E2B4;
+  border-radius: 13px;
+  color: #A77B00;
+  font-size: 21px;
+}
+
+.assam-reports-feature h3 {
+  margin: 2px 0 7px;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: 17px;
+}
+
+.assam-reports-feature p {
+  margin: 0;
+  color: #6D7481;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.assam-reports-cta {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 10px;
+  margin-top: 5px;
+  padding: 14px 20px;
+  background: #F5C928;
+  border-radius: 9px;
+  color: #202B3C;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.assam-reports-cta:hover {
+  background: #E8B900;
+}
+
+.assam-reports-preview {
+  min-width: 0;
+  padding: 26px;
+  background: #FFFCF1;
+  border: 1px solid #EEE5CB;
+  border-radius: 20px;
+  box-shadow: 0 18px 50px rgba(32, 43, 60, 0.07);
+}
+
+.assam-reports-preview-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.assam-reports-preview-top span {
+  color: #A17B00;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.assam-reports-preview-top h3 {
+  margin: 7px 0 0;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: 23px;
+}
+
+.assam-reports-preview-icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  place-items: center;
+  background: #F5C928;
+  border-radius: 13px;
+  color: #202B3C;
+  font-size: 21px;
+}
+
+.assam-reports-placeholder {
+  padding: 28px 20px;
+  background: #FFFFFF;
+  border: 1px dashed #E4D6A9;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.assam-reports-placeholder > i {
+  display: inline-grid;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 12px;
+  place-items: center;
+  background: #FFF5D0;
+  border-radius: 15px;
+  color: #A77B00;
+  font-size: 27px;
+}
+
+.assam-reports-placeholder h4 {
+  margin: 0 0 8px;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: 17px;
+}
+
+.assam-reports-placeholder p {
+  max-width: 310px;
+  margin: 0 auto;
+  color: #737987;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.assam-reports-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.assam-reports-list > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  background: #FFFFFF;
+  border: 1px solid #EEE8D9;
+  border-radius: 10px;
+  color: #424B5A;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.assam-reports-list-icon {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  place-items: center;
+  background: #FFF8E1;
+  border-radius: 8px;
+  color: #A77B00;
+  font-size: 16px;
+}
+
+.assam-reports-list > div > span:nth-child(2) {
+  flex: 1;
+}
+
+.assam-reports-list > div > i {
+  color: #A5AAB3;
+  font-size: 12px;
+}
+
+.assam-reports-disclaimer {
+  margin: 16px 0 0;
+  color: #7A8190;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+@media (max-width: 850px) {
+  .assam-reports-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .assam-reports-copy {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .assam-reports-section {
+    padding: 60px 0;
+  }
+
+  .assam-reports-preview {
+    padding: 18px;
+  }
+
+  .assam-reports-preview-top h3 {
+    font-size: 20px;
+  }
+}
+
+/* STEP 11: WHY CHOOSE MADHUSHALA PRO */
+
+.assam-why-section {
+  padding: 90px 0;
+  background: #FFFDF5;
+  font-family: var(--assam-body-font);
+}
+
+.assam-why-heading {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.assam-why-heading h2 {
+  margin: 14px 0;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.2;
+}
+
+.assam-why-heading h2 span {
+  color: #C79600;
+}
+
+.assam-why-heading p {
+  color: var(--assam-text);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.assam-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.assam-why-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  padding: 28px 24px;
+  background: #FFFFFF;
+  border: 1px solid #EEE6D1;
+  border-radius: 15px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.assam-why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(32, 43, 60, 0.08);
+}
+
+.assam-why-icon {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 22px;
+  place-items: center;
+  background: #FFF5D0;
+  border: 1px solid #F1E4B8;
+  border-radius: 14px;
+  color: #A77B00;
+  font-size: 23px;
+}
+
+.assam-why-card h3 {
+  margin: 0 0 11px;
+  color: var(--assam-navy);
+  font-family: var(--assam-heading-font);
+  font-size: 19px;
+}
+
+.assam-why-card p {
+  margin: 0;
+  color: #6D7481;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.assam-why-number {
+  position: absolute;
+  right: 18px;
+  bottom: 12px;
+  color: #F0EAD9;
+  font-family: var(--assam-heading-font);
+  font-size: 35px;
+  font-weight: 800;
+  pointer-events: none;
+}
+
+.assam-why-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 32px;
+  padding: 28px 30px;
+  background: #202B3C;
+  border-radius: 16px;
+}
+
+.assam-why-bottom-label {
+  color: #F5C928;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.assam-why-bottom h3 {
+  margin: 8px 0;
+  color: #FFFFFF;
+  font-family: var(--assam-heading-font);
+  font-size: 22px;
+}
+
+.assam-why-bottom p {
+  margin: 0;
+  color: #D2D8E2;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.assam-why-bottom .assam-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  flex-shrink: 0;
+  padding: 14px 19px;
+  background: #F5C928;
+  border-radius: 9px;
+  color: #202B3C;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.assam-why-bottom .assam-btn:hover {
+  background: #E8B900;
+}
+
+@media (max-width: 900px) {
+  .assam-why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .assam-why-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .assam-why-section {
+    padding: 60px 0;
+  }
+
+  .assam-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .assam-why-card {
+    padding: 24px 20px;
+  }
+
+  .assam-why-bottom {
+    padding: 24px 20px;
+  }
+
+  .assam-why-bottom h3 {
+    font-size: 20px;
+  }
+
+  .assam-why-bottom .assam-btn {
+    width: 100%;
+  }
+}
+
+/* STEP 12: CONTACT & DEMO REQUEST */
+
+.assam-contact-section {
+  padding: 90px 0;
+  background: #FFFFFF;
+  font-family: var(--assam-body-font);
+}
+
+.assam-contact-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  overflow: hidden;
+  background: #202B3C;
+  border-radius: 24px;
+  box-shadow: 0 20px 55px rgba(32, 43, 60, 0.15);
+}
+
+.assam-contact-content {
+  padding: 55px 45px;
+}
+
+.assam-contact-eyebrow {
+  color: #F5C928;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.assam-contact-content h2 {
+  margin: 18px 0;
+  color: #FFFFFF;
+  font-family: var(--assam-heading-font);
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.2;
+}
+
+.assam-contact-content h2 span {
+  color: #F5C928;
+}
+
+.assam-contact-content > p {
+  color: #D4D9E2;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.assam-contact-points {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 26px 0;
+}
+
+.assam-contact-points div {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.assam-contact-points i {
+  margin-top: 2px;
+  color: #F5C928;
+}
+
+.assam-contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.assam-contact-primary,
+.assam-contact-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 46px;
+  padding: 13px 17px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.assam-contact-primary {
+  background: #F5C928;
+  color: #202B3C;
+}
+
+.assam-contact-primary:hover {
+  background: #E8B900;
+}
+
+.assam-contact-secondary {
+  border: 1px solid #697384;
+  color: #FFFFFF;
+}
+
+.assam-contact-secondary:hover {
+  background: #303D51;
+}
+
+.assam-contact-content .assam-contact-email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  color: #D4D9E2;
+  font-size: 12px;
+}
+
+.assam-contact-visual {
+  position: relative;
+  display: flex;
+  min-height: 440px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #F5C928;
+}
+
+.assam-contact-circle {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border: 1px solid rgba(32, 43, 60, 0.18);
+  border-radius: 50%;
+}
+
+.assam-contact-circle::before,
+.assam-contact-circle::after {
+  position: absolute;
+  content: "";
+  border: 1px solid rgba(32, 43, 60, 0.16);
+  border-radius: 50%;
+}
+
+.assam-contact-circle::before {
+  inset: 25px;
+}
+
+.assam-contact-circle::after {
+  inset: 50px;
+}
+
+.assam-contact-visual-icon {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 150px;
+  height: 150px;
+  place-items: center;
+  background: #202B3C;
+  border: 8px solid rgba(255, 255, 255, 0.4);
+  border-radius: 35px;
+  box-shadow: 0 20px 40px rgba(32, 43, 60, 0.2);
+  color: #F5C928;
+  font-size: 70px;
+  transform: rotate(-5deg);
+}
+
+.assam-contact-floating {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 17px;
+  background: #FFFFFF;
+  border: 1px solid rgba(32, 43, 60, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(32, 43, 60, 0.13);
+  color: #202B3C;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.assam-contact-floating i {
+  color: #A77B00;
+  font-size: 20px;
+}
+
+.assam-contact-float-one {
+  top: 85px;
+  left: 18px;
+}
+
+.assam-contact-float-two {
+  right: 18px;
+  bottom: 115px;
+}
+
+.assam-contact-visual-caption {
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  color: #202B3C;
+}
+
+.assam-contact-visual-caption strong {
+  font-family: var(--assam-heading-font);
+  font-size: 20px;
+}
+
+.assam-contact-visual-caption span {
+  font-size: 11px;
+}
+
+@media (max-width: 850px) {
+  .assam-contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .assam-contact-content {
+    padding: 40px 30px;
+  }
+
+  .assam-contact-visual {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 500px) {
+  .assam-contact-section {
+    padding: 60px 0;
+  }
+
+  .assam-contact-content {
+    padding: 32px 22px;
+  }
+
+  .assam-contact-buttons {
+    flex-direction: column;
+  }
+
+  .assam-contact-primary,
+  .assam-contact-secondary {
+    width: 100%;
+  }
+
+  .assam-contact-visual {
+    min-height: 340px;
+  }
+
+  .assam-contact-circle {
+    width: 260px;
+    height: 260px;
+  }
+
+  .assam-contact-visual-icon {
+    width: 120px;
+    height: 120px;
+    font-size: 55px;
+  }
+
+  .assam-contact-float-one {
+    top: 50px;
+    left: 8px;
+  }
+
+  .assam-contact-float-two {
+    right: 8px;
+    bottom: 100px;
+  }
+}
+
+/* STEP 13: PROFESSIONAL FOOTER */
+
+.assam-footer {
+  padding: 65px 0 0;
+  background: #202B3C;
+  color: #FFFFFF;
+  font-family: var(--assam-body-font);
+}
+
+.assam-footer-main {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1fr 1.2fr;
+  gap: 38px;
+  padding-bottom: 45px;
+}
+
+.assam-footer-brand,
+.assam-footer-links,
+.assam-footer-contact {
+  min-width: 0;
+}
+
+.assam-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #FFFFFF;
+  font-family: var(--assam-heading-font);
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.assam-footer-logo b {
+  color: #F5C928;
+}
+
+.assam-footer-logo-icon {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  background: #F5C928;
+  border-radius: 11px;
+  color: #202B3C;
+  font-size: 21px;
+}
+
+.assam-footer-brand > p {
+  max-width: 290px;
+  margin: 20px 0;
+  color: #C5CDD8;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.assam-footer-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 15px;
+  background: #F5C928;
+  border-radius: 8px;
+  color: #202B3C;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.assam-footer-cta:hover {
+  background: #E8B900;
+}
+
+.assam-footer-links h3,
+.assam-footer-contact h3 {
+  margin: 7px 0 22px;
+  color: #FFFFFF;
+  font-family: var(--assam-heading-font);
+  font-size: 15px;
+}
+
+.assam-footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.assam-footer-links a {
+  color: #C5CDD8;
+  font-size: 12px;
+  line-height: 1.6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.assam-footer-links a:hover {
+  color: #F5C928;
+}
+
+.assam-footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.assam-footer-contact a {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  color: #C5CDD8;
+  font-size: 12px;
+  line-height: 1.7;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.assam-footer-contact a i {
+  margin-top: 2px;
+  color: #F5C928;
+  font-size: 16px;
+}
+
+.assam-footer-contact a:hover {
+  color: #F5C928;
+}
+
+.assam-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 0;
+  border-top: 1px solid #3A4555;
+}
+
+.assam-footer-bottom p {
+  margin: 0;
+  color: #AEB8C6;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.assam-footer-back-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #F5C928;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.assam-footer-back-top:hover {
+  color: #FFFFFF;
+}
+
+@media (max-width: 950px) {
+  .assam-footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+  }
+}
+
+@media (max-width: 550px) {
+  .assam-footer {
+    padding-top: 45px;
+  }
+
+  .assam-footer-main {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-bottom: 35px;
+  }
+
+  .assam-footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+/* =========================================
+   HERO - DASHBOARD VISUAL
+========================================= */
+
+.assam-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 27, 39, 0.80) 0%,
+      rgba(20, 27, 39, 0.65) 50%,
+      rgba(20, 27, 39, 0.55) 100%
+    ),
+    url("../assets/hero-bg.jpg") center center / cover no-repeat;
+
+  padding: 100px 0;
+  color: #ffffff;
+}
+
+.assam-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.assam-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.assam-hero-content h1 {
+  color: #ffffff;
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 1.08;
+  margin: 18px 0 24px;
+  font-weight: 700;
+}
+
+.assam-hero-content h1 span {
+  color: var(--assam-yellow);
+}
+
+.assam-hero-content p {
+  max-width: 600px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.assam-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.assam-hero .assam-btn {
+  background: var(--assam-yellow);
+  color: var(--assam-navy);
+  border: none;
+}
+
+.assam-hero .assam-btn:hover {
+  transform: translateY(-2px);
+}
+
+.assam-hero .assam-btn-secondary {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.assam-hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.assam-hero-trust span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.assam-hero-trust i {
+  color: var(--assam-yellow);
+  margin-right: 6px;
+}
+
+
+/* =========================================
+   DASHBOARD IMAGE
+========================================= */
+
+.assam-hero-visual {
+  position: relative;
+  z-index: 2;
+}
+
+.assam-dashboard-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.15);
+  transform: perspective(1200px) rotateY(-3deg);
+  transition: transform 0.4s ease;
+}
+
+.assam-dashboard-card:hover {
+  transform: perspective(1200px) rotateY(0deg) translateY(-5px);
+}
+
+.assam-dashboard-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.assam-dashboard-badge {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 16px;
+  border-radius: 30px;
+
+  background: rgba(32, 43, 60, 0.94);
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.assam-dashboard-badge i {
+  color: #5edb72;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .assam-hero {
+    padding: 70px 0;
+  }
+
+  .assam-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .assam-hero-content {
+    text-align: center;
+  }
+
+  .assam-hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .assam-hero-actions {
+    justify-content: center;
+  }
+
+  .assam-hero-trust {
+    justify-content: center;
+  }
+
+  .assam-dashboard-card {
+    transform: none;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .assam-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .assam-hero-content p {
+    font-size: 16px;
+  }
+
+  .assam-hero-actions {
+    flex-direction: column;
+  }
+
+  .assam-hero-actions a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .assam-dashboard-badge {
+    right: 15px;
+    bottom: 15px;
+    font-size: 11px;
+    padding: 8px 12px;
+  }
+}
+.assam-hero {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 27, 39, 0.78) 0%,
+      rgba(20, 27, 39, 0.62) 40%,
+      rgba(20, 27, 39, 0.35) 75%,
+      rgba(20, 27, 39, 0.20) 100%
+    ),
+    url("../assets/hero-bg.jpg") center center / cover no-repeat;
+
+  padding: 100px 0;
+  color: #ffffff;
+}
+/* FORCE HERO BACKGROUND IMAGE */
+.assam-hero {
+  background-image: url("../assets/hero-bg.jpg") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+.assam-hero-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.assam-hero-actions i {
+  font-size: 17px;
+  line-height: 1;
+}
+.assam-hero .assam-btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.assam-hero .assam-btn-secondary i {
+  color: #ffffff;
+}
+.assam-hero-content p {
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+/* White background for normal sections */
+main > section:not(.assam-hero):not(#contact) {
+  background-color: #ffffff;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* =========================================
+   TRUST STRIP
+========================================= */
+
+.assam-trust-strip {
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  padding: 24px 0;
+}
+
+.assam-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.assam-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+  border-right: 1px solid #eeeeee;
+}
+
+.assam-trust-item:last-child {
+  border-right: none;
+}
+
+.assam-trust-item > i {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--assam-yellow-light);
+  color: var(--assam-navy);
+
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.assam-trust-item strong {
+  display: block;
+  color: var(--assam-navy);
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.assam-trust-item span {
+  display: block;
+  color: #7a8290;
+  font-size: 12px;
+}
+
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .assam-trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .assam-trust-item:nth-child(2) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .assam-trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .assam-trust-item {
+    border-right: none;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .assam-trust-item:last-child {
+    border-bottom: none;
+  }
+}
