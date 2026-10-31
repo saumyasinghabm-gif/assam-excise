@@ -1915,6 +1915,25 @@ body {
   font-size: 17px;
 }
 
+/* =================================
+   ASSAM LOCALITY SECTION
+   ================================= */
+.assam-locality-section {
+  padding: 55px 0;
+  text-align: center;
+  background: var(--assam-white);
+  border-top: 1px solid var(--assam-border);
+  border-bottom: 1px solid var(--assam-border);
+}
+
+.assam-locality-text {
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--assam-text);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
 .assam-reports-placeholder p {
   max-width: 310px;
   margin: 0 auto;
