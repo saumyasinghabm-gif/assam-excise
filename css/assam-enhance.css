@@ -476,3 +476,43 @@ section[id]{ scroll-margin-top: var(--ax-nav-h); }
 }
 .ax-nav.is-scrolled .ax-logo-img{ height: 36px; }
 .ax-logo:hover .ax-logo-img{ transform: scale(1.06); }
+.assam-locality-section {
+    padding: 70px 0;
+    background: #fff;
+}
+
+.assam-locality-section .section-heading {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.assam-locality-section .section-heading h2 {
+    margin-bottom: 18px;
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.assam-locality-section .section-heading p {
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #666;
+}
+
+@media (max-width: 767px) {
+    .assam-locality-section {
+        padding: 50px 20px;
+    }
+
+    .assam-locality-section .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .assam-locality-section .section-heading p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
